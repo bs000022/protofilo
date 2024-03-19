@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container">
+
+            <!-- Logo and Toggle bar -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <!-- Sidebar header -->
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <!-- Sidebar body -->
+
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4">
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Contact button -->
+
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <a href="#contact" class="text-white text-decoration-none px-3 py-1 rounded-4"
+                            style="background-color:coral;">Get in touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <!-- Text on the left side -->
+                <div class="col-md-6 mb-4">
+                    <div class="home">
+                        <h2>Hello, it's me</h2>
+                        <h1>Boushra Sleem</h1>
+                        <h3 class="profession">I'm a passionate <span class="typing">Web developer.</span></h3>
+                        <p>I'm a web designer with extensive experience for over 1 year.<br> I am also proficient in
+                            designing and
+                            developing websites using HTML/CSS, JavaScript, WordPress, Angular, etc.
+                        </p>
+                        <a href="images/my cv.word" download class="btn btn2">Download CV</a>
+                    </div>
+                </div>
+
+                <!-- Image on the right side -->
+                <div class="col-md-6">
+                    <div class="pic">
+                        <img src="images/myself.jpg" alt="Boushra Sleem's photo" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="colored-line"></div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm passionate about web development and design, proficient in HTML, CSS, and JavaScript.
+                        I thrive on creating visually appealing and functional websites, staying updated on the latest
+                        trends in technology.
+                        My goal is to contribute my skills to craft seamless user experiences that exceed expectations.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                            <li><span>Web development</span><br>Web Development Html, CSS, Javascript, Bootstrap,
+                                Angular & Typescript </li>
+                            <li><span>Social Media management</span><br>Implementing Social Media Strategies</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>NOV 2023 - Current</span><br>Freelancer web development & social media</li>
+                            <li><span> FEB 2023 - AUG 2023</span><br>web development using angular at arab world
+                                innovation technologies<br></li>
+                            <li><span>JUN 2022 - JAN 2023</span><br>Social Media Specialist</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>DEC 2022 - JAN 2023</span><br>Mobile application Certification From Park
+                                Innovation</li>
+                            <li><span>MAY 2022 - JUN 2022</span><br>Javascript Certification From Park Innovation</li>
+                            <li><span>JAN 2019 - MAY 2023</span><br>Bachelor From Modern University Business & Science
+                            </li>
+                            <li><span>JAN 2018 - MAY 2019</span><br>Information technologies From Ajial al Ghad
+                                institute</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="colored-line1"></div>
+    </section>
+    <!-- services -->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-titles">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>From Design to Functionality, Harness the Power of HTML,
+                        CSS, Angular, and JavaScript in Crafting Seamless Web Experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Design</h2>
+                    <p>From Design to Functionality, Harness the Power of HTML, CSS, Angular,
+                        and JavaScript in Crafting Seamless Web Experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-hashtag"></i>
+                    <h2>Social media specialist</h2>
+                    <p>Elevate Your Brand Presence with Our Social
+                        Media Specialists - Crafting Strategies, Amplifying Engagement, and Driving Results.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div class="colored-line2"></div>
+    </section>
+
+    <!-- project -->
+
+    <section id="projects">
+        <div class="container">
+            <h1 class="sub-titles">My Latest projects</h1>
+            <div class="work-list">
+                <div class="works">
+                    <img src="images/f.png" alt="">
+                    <div class="layer">
+                        <h3>Skin care website</h3>
+                        <p>Elevate your self-care routine with our user-friendly website,
+                            offering a seamless online appointment experience.
+                        </p>
+                        <a href="https://mirasmirrorbeauty.com/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="works">
+                    <img src="images/i.png" alt="">
+                    <div class="layer">
+                        <h3>Skin care website</h3>
+                        <p>Elevate your self-care routine with our user-friendly website,
+                            offering a seamless online appointment experience.
+                        </p>
+                        <a href="images/i1.png"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="works">
+                    <img src="images/r.png" alt="">
+                    <div class="layer">
+                        <h3>Skin care website</h3>
+                        <p>Elevate your self-care routine with our user-friendly website,
+                            offering a seamless online appointment experience.
+                        </p>
+                        <a href="images/r1.png"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="works">
+                    <img src="images/s.png" alt="">
+                    <div class="layer">
+                        <h3>Skin care website</h3>
+                        <p>Elevate your self-care routine with our user-friendly website,
+                            offering a seamless online appointment experience.
+                        </p>
+                        <a href="images/s1.png"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="colored-line3"></div>
+    </section>
+    <!-- contact me -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>tagsite8@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+96176575563</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form onsubmit="emailSend(); reset(); return false;">
+                        <input type="text" id="Name" placeholder="Your name" required>
+                        <input type="email" id="Email" placeholder="Your email address" required>
+                        <textarea id="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright by Boushra Sleem<i class="fa-regular fa-copyright"></i> 2024</p>
+        </div>
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/bf6ab5a6a3.js" crossorigin="anonymous"></script>
+</html>
